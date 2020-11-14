@@ -20,12 +20,12 @@ var cesar = cesar || (function(){
 
                     if(action){
                         num = pos + desp;
-                        num < 25?(pos += desp):(pos += (desp-26));
+                        num < 26?(pos += desp):(pos += (desp-26));
 
                     }else{
 
                         num = pos - desp;
-                        num >= 0?(pos -= desp):((pos= (pos+26)-desp));
+                        num >= 0?(pos -= desp):(pos = 27 + num);
 
                     }
 

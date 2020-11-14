@@ -16,15 +16,16 @@ var cesar = cesar || (function(){
                 if(i != -1){
                     
                     var pos = i;
+                    var num;
 
                     if(action){
-                        var num = pos + desp;
+                        num = pos + desp;
                         num < 25?(pos += desp):(pos += (desp-26));
 
                     }else{
 
-                        pos -= desp;
-                        pos += (pos<0)?1:0;
+                        num = pos - desp;
+                        num > 0?(pos -= desp):(pos -= (desp+26));
 
                     }
 

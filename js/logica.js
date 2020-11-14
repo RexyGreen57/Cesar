@@ -19,7 +19,7 @@ var cesar = cesar || (function(){
 
                     if(action){
 
-                        pos += desp;
+                        pos= pos + desp;
                         pos -= (pos>=1)?1:0;
 
                     }else{

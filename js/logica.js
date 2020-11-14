@@ -18,8 +18,8 @@ var cesar = cesar || (function(){
                     var pos = i;
 
                     if(action){
-
-                        ((pos += desp)<25)?pos += desp:pos += (desp-26);;
+                        var num= pos += desp;
+                        num < 25?(pos += desp):(pos += (desp-26));
 
                     }else{
 

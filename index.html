@@ -1,16 +1,21 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+</head>
+<body>
+    Este es un ejemplo super kawaii uwu, del cifrado
+    Cesar, que se encarga de poder cifrar las letras
+    del alfabeto segun sea su posicion. :3 uwu
 
-    </head>
-    <body>
-        Este es un ejemplo super kawai del cifrado cesar que se encarga de poder cifrar las letras del alfabeto segun sea su pocisión
-        <br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <p> 
-            <input type="button" value="Cifrar" onclick="codificar()">
-            <input type="button" value="Decifrar" onclick="decodificar()">
-        </p>
+    <textarea id="cadena" ></textarea>
 
-        <div id="resultado"> </div> 
-    </body>
+    <p> <input type="button" value="Cifrar" onclick="codificar()" >
+        <input type="button" value="Decifrar" onclick="decodificar()" > </p>
+    
+    <div id="resultado" > </div>
+    <script src="js/logica.js" ></script>
+</body>
 </html>

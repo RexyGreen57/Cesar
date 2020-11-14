@@ -23,9 +23,9 @@ var cesar = cesar || (function(){
 
                         pos2= pos + desp;
                         if(pos2<(l-1)){
-                            pos2;
+                            pos2 = pos2;
                         }else{
-                            pos2 =(pos2 - 26);
+                            pos2 = pos2-26;
                         }
 
                     }else{

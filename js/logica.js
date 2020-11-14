@@ -25,7 +25,7 @@ var cesar = cesar || (function(){
                     }else{
 
                         num = pos - desp;
-                        num > 0?(pos -= desp):(pos -= (desp+26));
+                        num >= 0?(pos -= desp):((pos+26) -= desp);
 
                     }
 

@@ -12,24 +12,29 @@ var cesar = cesar || (function(){
             return function(c){
 
                 var i = abc.indexOf(c.toLowerCase());
+                var l = abc.length;
 
                 if(i != -1){
                     
                     var pos = i;
+                    var pos2;
 
                     if(action){
 
-                        pos= pos + desp;
-                        pos -= (pos>=1)?1:0;
+                        pos2= pos + desp;
+                        if(pos2<(l-1)){
+                            pos2;
+                        }else{
+                            pos2 =(pos2 - 26);
+                        }
 
                     }else{
 
-                        pos -= desp;
-                        pos += (pos<0)?1:0;
+                        pos2 = pos-desp;
 
                     }
 
-                    return abc[pos];
+                    return abc.valueOf(pos2);
                 }
 
                 return c;

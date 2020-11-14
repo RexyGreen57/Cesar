@@ -34,7 +34,7 @@ var cesar = cesar || (function(){
 
                     }
 
-                    return abc.valueOf(pos2);
+                    return abc[pos2];
                 }
 
                 return c;
